@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/e_commerce_site/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/e_commerce_site/spec/controllers/carts_controller_spec.rb": [
         1,
         null,
         1,
-        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/e_commerce_site/spec/rails_helper.rb": [
@@ -514,6 +514,55 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/e_commerce_site/config/initializers/rails_admin.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/e_commerce_site/config/initializers/wrap_parameters.rb": [
         null,
         null,
@@ -533,7 +582,14 @@
       "/Users/Guest/Desktop/e_commerce_site/config/routes.rb": [
         1,
         1,
+        1,
+        1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/e_commerce_site/app/models/user.rb": [
@@ -542,6 +598,8 @@
         null,
         1,
         null,
+        null,
+        1,
         null
       ],
       "/Users/Guest/Desktop/e_commerce_site/app/models/application_record.rb": [
@@ -552,9 +610,38 @@
       "/Users/Guest/Desktop/e_commerce_site/app/controllers/application_controller.rb": [
         1,
         1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/e_commerce_site/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/helpers/carts_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/helpers/order_items_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/helpers/orders_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/helpers/pages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/helpers/products_helper.rb": [
         1,
         null
       ],
@@ -570,6 +657,48 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/e_commerce_site/app/controllers/carts_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/controllers/order_items_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/controllers/orders_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/controllers/pages_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/controllers/products_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/e_commerce_site/app/jobs/application_job.rb": [
         1,
         null
@@ -580,14 +709,222 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/e_commerce_site/app/models/account.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/models/order.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/models/order_item.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/app/models/product.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/factories/accounts.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/factories/order_items.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/factories/orders.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/factories/products.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/e_commerce_site/spec/factories/users.rb": [
         1,
         1,
         null,
         null,
         null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/controllers/order_items_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/controllers/orders_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/controllers/pages_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/controllers/products_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/helpers/carts_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/helpers/order_items_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/helpers/orders_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/helpers/pages_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/helpers/products_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/models/account_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/models/order_item_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/models/order_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/models/product_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/e_commerce_site/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1512423063
+    "timestamp": 1512431380
   }
 }
