@@ -38,6 +38,7 @@ gem 'faker'
 gem 'devise', '~> 4.3'
 gem "paperclip", "~> 5.0.0"
 gem 'rails_admin', '~> 1.2'
+gem 'rest-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,6 +50,7 @@ group :development, :test do
   gem 'capybara'
   gem 'factory_bot_rails'
   gem 'simplecov', require: false
+  gem 'dotenv-rails'
 end
 
 group :development do
