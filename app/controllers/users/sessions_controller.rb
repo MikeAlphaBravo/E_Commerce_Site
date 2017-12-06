@@ -13,9 +13,12 @@ class Users::SessionsController < Devise::SessionsController
       current_order.update(account_id: current_user.id)
     end
     if (Account.find(current_user.id)).orders.any? && current_order.id != nil
-      binding.pry
       (Order.find(current_order.id)).order_items.each do |item|
-        item.update(order_id: current_user.id)
+        if @test =  (Account.find(current_user.id)).orders.find(current_user.id).order_items.where(product_id: item.product_id).any? === true
+          @test.update(quantity: @test.first.quantity + item.quantity)
+        else
+          item.update(order_id: current_user.id)
+        end
       end
       Order.destroy(current_order.id)
     end
