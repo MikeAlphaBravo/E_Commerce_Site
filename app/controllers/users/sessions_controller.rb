@@ -12,6 +12,14 @@ class Users::SessionsController < Devise::SessionsController
     if current_order
       current_order.update(account_id: current_user.id)
     end
+    if (Account.find(current_user.id)).orders.any? && current_order.id != nil
+      binding.pry
+      (Order.find(current_order.id)).order_items.each do |item|
+        item.update(order_id: current_user.id)
+      end
+      Order.destroy(current_order.id)
+    end
+    session[:order_id] = current_user.id
   end
 
   # DELETE /resource/sign_out

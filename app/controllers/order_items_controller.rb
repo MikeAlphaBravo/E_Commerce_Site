@@ -7,7 +7,6 @@ class OrderItemsController < ApplicationController
       @order.update(account_id: current_user.id)
     end
     session[:order_id] = @order.id
-    binding.pry
     redirect_to products_path
   end
 
