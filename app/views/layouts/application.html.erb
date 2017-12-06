@@ -11,7 +11,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
       <ul><%= link_to('Home', root_path) %></ul>
       <ul><%= link_to('Products', products_path) %></ul>
-      <ul><%= link_to('Cart', cart_path) %></ul>
+      <ul><%= link_to('Cart', cart_path) %>
+      <% if current_order.order_items.any? %>
+       | Items: <%= items_in_cart %></ul>
+      <% else %>
+        </ul>
+      <% end %>
+
       <% if current_user %>
         <ul><%= link_to('Edit User', edit_user_registration_path) %></ul>
       <% end %>
