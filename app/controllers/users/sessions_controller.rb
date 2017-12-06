@@ -7,9 +7,12 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # POST /resource/sign_in
-  # def create
-  #   super
-  # end
+  def create
+    super
+    if current_order
+      current_order.update(account_id: current_user.id)
+    end
+  end
 
   # DELETE /resource/sign_out
   # def destroy

@@ -3,7 +3,11 @@ class OrderItemsController < ApplicationController
     @order = current_order
     @item = @order.order_items.new(item_params)
     @order.save
+    if current_user
+      @order.update(account_id: current_user.id)
+    end
     session[:order_id] = @order.id
+    binding.pry
     redirect_to products_path
   end
 
