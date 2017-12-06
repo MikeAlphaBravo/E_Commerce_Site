@@ -1,7 +1,9 @@
 User.destroy_all
+Account.destroy_all
 Product.destroy_all
 
 User.create(email: 'admin@admin.com', password: '123456', admin: true)
+Account.create(user_id: 1)
 
 p "Created #{User.count} user"
 
