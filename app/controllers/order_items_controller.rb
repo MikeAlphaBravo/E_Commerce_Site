@@ -2,13 +2,13 @@ class OrderItemsController < ApplicationController
   def create
     @order = current_order
     # @item = @order.order_items.new(item_params)
-    # binding.pry
-    if current_user && Account.find(current_user.id).orders.last.order_items.where(product_id:  item_params[:product_id]).any?
+    if current_user && Account.find(current_user.id).orders.first.order_items.where(product_id:  item_params[:product_id]).any?
       if @test = @order.order_items.where(product_id: item_params[:product_id])
         @test.update(quantity: @test.first.quantity + item_params[:quantity].to_i)
         @order.save
       end
     else
+      binding.pry
       @item = @order.order_items.new(item_params)
       @order.save
     end

@@ -12,10 +12,14 @@
       <ul><%= link_to('Home', root_path) %></ul>
       <ul><%= link_to('Products', products_path) %></ul>
       <ul><%= link_to('Cart', cart_path) %>
-      <% if current_order.order_items.any? %>
-       | Items: <%= items_in_cart %></ul>
+      <% if current_user && current_user.account.orders.any? %>
+        <% if current_user && current_user.account.orders.first.order_items.any? %>
+         | Items: <%= items_in_cart %></ul>
+        <% else %>
+          </ul>
+        <% end %>
       <% else %>
-        </ul>
+      | Items: <%= items_in_cart %></ul>
       <% end %>
 
       <% if current_user %>
