@@ -14,7 +14,7 @@
       <ul><%= link_to('Cart', cart_path) %>
       <% if current_user && current_user.account.orders.any? %>
         <% if current_user && current_user.account.orders.first.order_items.any? %>
-         | Items: <%= items_in_cart %></ul>
+         | Items: <span id='items_in_cart'><%= items_in_cart %></span></ul>
         <% else %>
           </ul>
         <% end %>

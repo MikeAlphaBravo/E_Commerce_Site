@@ -8,7 +8,6 @@ class OrderItemsController < ApplicationController
         @order.save
       end
     else
-      binding.pry
       @item = @order.order_items.new(item_params)
       @order.save
     end
@@ -22,9 +21,16 @@ class OrderItemsController < ApplicationController
   def destroy
     @order = current_order
     @item = @order.order_items.find(params[:id])
+    # binding.pry
     @item.destroy
     @order.save
-    redirect_to cart_path
+    @total = current_order.total_price
+    # @total = number_to_currency current_order.total_price
+    # binding.pry
+    respond_to do |format|
+      format.html { redirect_to cart_path }
+      format.js { render 'carts/destroy' }
+    end
   end
 
   private

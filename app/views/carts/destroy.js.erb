@@ -1,0 +1,3 @@
+$('#order_item_<%= @item.id %>').remove();
+$('#total').html('<%= number_to_currency @total %>');
+$('#items_in_cart').html('<%= items_in_cart %>');
