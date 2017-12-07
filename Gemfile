@@ -39,6 +39,7 @@ gem 'devise', '~> 4.3'
 gem "paperclip", "~> 5.0.0"
 gem 'rails_admin', '~> 1.2'
 gem 'rest-client'
+gem 'stripe'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

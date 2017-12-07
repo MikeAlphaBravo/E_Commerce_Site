@@ -15,7 +15,10 @@ class OrderItemsController < ApplicationController
       @order.update(account_id: current_user.id)
     end
     session[:order_id] = @order.id
-    redirect_to products_path
+    respond_to do |format|
+      format.html { redirect_to products_path }
+      format.js { render 'products/create' }
+    end
   end
 
   def destroy
@@ -25,7 +28,6 @@ class OrderItemsController < ApplicationController
     @item.destroy
     @order.save
     @total = current_order.total_price
-    # @total = number_to_currency current_order.total_price
     # binding.pry
     respond_to do |format|
       format.html { redirect_to cart_path }
